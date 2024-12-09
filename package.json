@@ -1,6 +1,9 @@
 {
     "name": "pyright-root",
     "private": true,
+    "workspaces": [
+        "packages/*"
+    ],
     "scripts": {
         "clean": "lerna run --no-bail --stream clean",
         "install:all": "npm install && lerna exec --no-bail npm install",
@@ -35,6 +38,10 @@
         "prettier": "2.4.1",
         "syncpack": "^13.0.0",
         "typescript": "~4.4.4",
+        "webpack-cli": "^5.1.4",
         "yargs": "^16.2.0"
+    },
+    "dependencies": {
+        "@vscode/vsce": "^3.2.1"
     }
 }
